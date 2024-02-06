@@ -7,7 +7,3 @@ function camelize(str) {
     )
     .join('');
 }
-
-camelize('background-color') == 'backgroundColor';
-camelize('list-style-image') == 'listStyleImage';
-camelize('-webkit-transition') == 'WebkitTransition';
