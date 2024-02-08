@@ -18,5 +18,4 @@ calculator.read();
 console.log(calculator.sum()); // 8
 console.log(calculator.mul()); // 15
 
-let calculator1 = "window.calculator = calculator;";
-console.log(calculator1); // попробовал исправить ошибку "нужно вернуть строку..."
+console.log(window.calculator = calculator); // попробовал исправить ошибку "нужно вернуть строку..."
