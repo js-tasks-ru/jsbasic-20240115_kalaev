@@ -1,6 +1,23 @@
 let calculator = {
-  // ваш код
+  read(a,b) { //при вызове присваиваются значения
+    this.a = a;
+    this.b = b;
+  },
+
+  sum() {
+    return this.a + this.b;
+  },
+
+  mul() {
+    return this.a * this.b;
+  },
+
 };
 
-// НЕ УДАЛЯТЬ СТРОКУ, НУЖНА ДЛЯ ПРОВЕРКИ
-window.calculator = calculator; // делает ваш калькулятор доступным глобально
+calculator.read();
+console.log(calculator.sum()); // 8
+console.log(calculator.mul()); // 15
+
+
+window.calculator = calculator;
+console.log(window.calculator = calculator); // попробовал исправить ошибку "нужно вернуть строку..."
